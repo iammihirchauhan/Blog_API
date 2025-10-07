@@ -12,4 +12,3 @@ class BlogPostListCreate(generics.ListCreateAPIView):
 class BlogPostRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializer
-    lookup_field = "pk"
